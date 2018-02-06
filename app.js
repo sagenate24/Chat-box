@@ -1,7 +1,5 @@
 var express = require('express');
-//var bodyParser = require('body-parser');
 var path = require('path');
-
 var fs = require('fs');
 
 var app = express();
@@ -27,10 +25,11 @@ app.get('/', function (req, res) {
     
     //res.sendfile('views/index.html');
 
-    var page = fs.readfileSync('views/index.html');
+    var page = fs.readFileSync('views/index.html');
 
     res.setHeader('Content-Type', 'text/html');
     res.send(page);
+    
 });
 
 
