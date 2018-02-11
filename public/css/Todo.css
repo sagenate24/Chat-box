@@ -1,0 +1,63 @@
+
+/*Styles for javascript*/
+.addACheck {
+    visibility: hidden;
+    padding: 0px;
+    float: left;
+}
+.todoCompleted .addACheck {
+    visibility: visible;    
+}
+.todoCompleted {
+    text-decoration: line-through;
+    background-color: #e2e2e2;
+}
+.removeIfCompleted {
+    display: none;
+}
+
+/*Styles for the html*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 25px;
+}
+body {
+    background-color: #ffffff;
+}
+
+#mainContainer {
+    max-width: 475px;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid grey;
+    background-color: c6c6c6;
+}
+#headContainer {
+     padding: 20px;
+     background-color: #FF715B;
+     border-bottom: 5px solid #c6c6c6;
+     text-align: center;
+}
+button, input {
+    padding: 5px;
+}
+#bodyContainer {
+    min-height: 500px;
+    background-color: #ffffff;
+}
+#bodyContainer div {
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    
+}
+#bodyContainer div:hover {
+    cursor: pointer;
+}
+.delete {
+    float: right;   
+}
+#bodyContainer div :first-child {
+    margin-right: 30px;
+}
