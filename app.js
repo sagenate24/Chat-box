@@ -31,6 +31,16 @@ app.get('/', function (req, res) {
     res.send(page);
     
 });
+app.get('/todo', function (req, res) {
+    
+    //res.sendfile('views/index.html');
+
+    var page = fs.readFileSync('views/Todo.html');
+
+    res.setHeader('Content-Type', 'text/html');
+    res.send(page);
+    
+});
 
 
 app.listen(3000, function () {

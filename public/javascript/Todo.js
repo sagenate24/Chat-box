@@ -21,7 +21,6 @@ function myTodoFunction() {
     renderStuff.appendChild(divAndFuckBoys)
     document.querySelector('#userInputText').value = "";
 
-    document.querySelector('#userInputText').placeholder='';
 } else {};
     divAndFuckBoys.addEventListener("click", function () {
         //reverses the value of the variable to be true first then keeps reversing as the function runs
