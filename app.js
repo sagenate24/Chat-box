@@ -1,6 +1,6 @@
 var express = require('express');
 var path = require('path');
-var fs = require('fs');
+//var fs = require('fs');
 
 var app = express();
 
@@ -26,6 +26,6 @@ app.get('/Famousperson', function (req, res) {
 
 //Local host 3000 and stuff
 app.listen(3000, function () {
-    console.log("Server started on port 3000...");
+    console.log('Server started on port 3000...');
 });
 

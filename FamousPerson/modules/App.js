@@ -9,6 +9,7 @@ export class App extends React.Component {
                 <ul role="nav">
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/sources">Sources</Link></li>
+                    <li><Link to="/link">Link</Link></li>
                 </ul>
 
                 {this.props.children}
