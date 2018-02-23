@@ -61,3 +61,7 @@ button, input {
 #bodyContainer div :first-child {
     margin-right: 30px;
 }
+.yesOrNo {
+    float: right;
+    padding-right: 20px;
+}

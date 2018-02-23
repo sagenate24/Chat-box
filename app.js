@@ -3,46 +3,29 @@ var path = require('path');
 var fs = require('fs');
 
 var app = express();
-/*
-var logger = function(req, res, next){
-    console.log("logging....");
-    next();
-}
-
-app.use(logger);
-*/
-
-// view engine
-
-app.set('views', path.join(__dirname, 'views'));
 
 //set static path
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
-
-
+//HTML pages
 app.get('/', function (req, res) {
     
-    //res.sendfile('views/index.html');
-
-    var page = fs.readFileSync('views/index.html');
-
-    res.setHeader('Content-Type', 'text/html');
-    res.send(page);
-    
+    res.sendfile('views/index.html');
 });
 app.get('/todo', function (req, res) {
     
-    //res.sendfile('views/index.html');
+    res.sendfile('views/index.html');
 
-    var page = fs.readFileSync('views/Todo.html');
-
-    res.setHeader('Content-Type', 'text/html');
-    res.send(page);
+});
+app.get('/Famousperson', function (req, res) {
     
+    res.sendfile('dist/index.html');
+
 });
 
-
+//Local host 3000 and stuff
 app.listen(3000, function () {
     console.log("Server started on port 3000...");
 });
+

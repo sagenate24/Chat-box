@@ -38,6 +38,7 @@ function myTodoFunction() {
         //removes the element in the row when the deleteButton is clicked
         divAndFuckBoys.querySelector(".delete").addEventListener("click", function () {
             renderStuff.removeChild(divAndFuckBoys);
+
         });
 
     }
